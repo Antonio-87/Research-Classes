@@ -9,13 +9,13 @@ export default class Character {
             this.health = 100;
             this.level = 1;
         } else if (name instanceof TypeError) {
-            throw new Error(
+            throw new TypeError(
                 `
                 name - строка, min - 2 символа, max - 10\n
                 `,
             );
         } else if (type instanceof TypeError) {
-            throw new Error(
+            throw new TypeError(
                 `
                 type - один из типов (строка): Bowman, Swordsman, Magician, Daemon, Undead, Zombie
                 `,
